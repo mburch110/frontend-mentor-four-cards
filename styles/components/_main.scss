@@ -1,0 +1,52 @@
+@use "../abstracts" as a;
+
+.c-header {
+  width: 310px;
+  padding: 30px;
+}
+
+.c-main {
+  width: min(100%, 1110px);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 29px;
+}
+
+.c-box {
+  width: 310px;
+  @media (min-width: a.$media-desktop-max) {
+    width: 350px;
+  }
+  padding: 30px;
+  background-color: #fff;
+}
+
+.c-box--supervisor {
+  @media (min-width: a.$media-desktop-max) {
+    order: 1;
+    position: relative;
+    top: 96px;
+  }
+}
+
+.c-box--team-builder {
+  @media (min-width: a.$media-desktop-max) {
+    order: 2;
+  }
+}
+
+.c-box--karma {
+  @media (min-width: a.$media-desktop-max) {
+    order: 3;
+    position: relative;
+    top: 96px;
+  }
+}
+
+.c-box--calculator {
+  @media (min-width: a.$media-desktop-max) {
+    order: 4;
+  }
+}

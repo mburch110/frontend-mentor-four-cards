@@ -1,1 +1,1 @@
-# simple boilerplate project with basic sass file structure
+# Frontend Mentor - Four card feature section
