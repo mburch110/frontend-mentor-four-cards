@@ -66,7 +66,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 29px;
+  gap: 30px;
 }
 @media (min-width: 1048px) {
   .c-main {
@@ -77,13 +77,13 @@ h2 {
 }
 
 .c-headline {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 @media (min-width: 440px) {
   .c-headline {
     font-size: 37px;
-    line-height: 48px;
+    line-height: 46px;
   }
 }
 
@@ -98,7 +98,9 @@ h2 {
 }
 
 .c-header__text {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
+  font-size: 1rem;
+  list-style: 1.5em;
 }
 
 .c-box {
@@ -116,17 +118,19 @@ h2 {
 }
 @media (min-width: 440px) {
   .c-box {
-    padding: 25px 29px 26px 30px;
+    padding: 27px 29px 26px 30px;
   }
 }
 
 .c-box__headline {
   font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .c-box__text {
   font-size: 13px;
-  margin-bottom: 40px;
+  line-height: 23px;
+  margin-bottom: 39px;
 }
 
 .c-box--supervisor {
