@@ -11,7 +11,10 @@ h2 {
 
 .c-header {
   width: min(100%, 575px);
-  padding: 30px;
+  padding: 2px;
+  @media (min-width: a.$media-desktop-min) {
+    padding: 30px;
+  }
   text-align: center;
 }
 
@@ -32,9 +35,24 @@ h2 {
 }
 
 .c-headline {
-  @media (min-width: 440px) {
+  margin-bottom: 21px;
+  font-size: 24px;
+  @media (min-width: a.$media-desktop-min) {
     font-size: 37px;
+    line-height: 48px;
   }
+}
+
+.c-header__punchline {
+  color: a.$cl-very-dark-blue;
+  font-weight: 200;
+  @media (min-width: a.$media-desktop-min) {
+    font-size: 36px;
+  }
+}
+
+.c-header__text {
+  margin-bottom: 34px;
 }
 
 .c-box {
@@ -42,13 +60,23 @@ h2 {
   @media (min-width: 1200px) {
     width: 350px;
   }
-  padding: 30px;
+  padding: 20px 29px 26px 30px;
+  @media (min-width: a.$media-desktop-min) {
+    padding: 25px 29px 26px 30px;
+  }
   background-color: #fff;
   border-radius: 5px;
   border-top: 4px solid;
+  box-shadow: 2px 5px 13px 2px #cfcfdf;
+}
+
+.c-box__headline {
+  font-size: 20px;
 }
 
 .c-box__text {
+  font-size: 13px;
+  margin-bottom: 40px;
 }
 
 .c-box--supervisor {
